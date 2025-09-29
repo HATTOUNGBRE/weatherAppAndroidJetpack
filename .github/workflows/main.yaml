@@ -5,10 +5,11 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps: 
-        - run: echo "Hello Shantou"
         - name: Checkout
           uses: actions/checkout@v5.0.0
 
+        - run: echo "Hello Shantou"
+        
         - name: Setup Gradle
           uses: gradle/actions/setup-gradle@v4
         - name: Build with gradle
