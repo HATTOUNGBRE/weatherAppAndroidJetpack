@@ -4,6 +4,6 @@ on: push
 jobs:
   hello-world:
     runs-on: ubuntu-latest
-  steps:
-    - run: echo "Hello World"
-    - run: echo "Ça marche !"
+    steps:
+      - run: echo "Hello World"
+      - run: echo "Ça marche !"
