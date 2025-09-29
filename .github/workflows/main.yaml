@@ -1,9 +1,14 @@
 name: Mon premier Worflow
-on: push
+on: [push]
 
 jobs:
   hello-world:
     runs-on: ubuntu-latest
-    steps:
-      - run: echo "Hello World"
-      - run: echo "Ça marche !"
+    steps: 
+        - run: echo "Hello Shantou"
+        - name: Setup Gradle
+          uses: gradle/actions/setup-gradle@v4
+        - name: Build with gradle
+          uses: ./gradlew build
+    
+  
